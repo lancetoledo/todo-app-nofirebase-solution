@@ -23,7 +23,7 @@ function Task({task,tasks,setTasks}) {
 
     return (
 
-        <div className="todo-item">
+        <div className={`todo-item`}>
         <div className="check" onClick={markCompleted}>
             {/* mutableTodo.status ? 'check-mark checked' : 'check-mark' */}
             <div className={`check-mark ${checked}`}>

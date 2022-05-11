@@ -17,9 +17,10 @@ function TaskList({tasks,setTasks, filterStatus, setFilterStatus,filteredTasks})
             {/* #11 Map through the tasks array that get's passed down form app */}
 
          {/*Used to be tasks.map() but filteredTasks.map() is better  */}
-         {filteredTasks.map((task)=>{
+         {filteredTasks.map((task,index)=>{
             //  #12
             return <Task
+                key = {task.id}
                 task = {task}
                 setTasks = {setTasks}
                 tasks = {tasks}
